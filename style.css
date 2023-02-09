@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    background: rgba(245, 171, 245, 0.727);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper button {
+    background-image: url("./images/smile.svg");
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    padding: 60px;
+    position: relative;
+    background-position: center center;
+}
+
+.wrapper:hover button {
+    background-image: url('./images/smileHover.svg');
+}
+
+.wrapper button:hover {
+    background-image: url('./images/smileHover.svg');
+}
+
+.wrapper button:hover ~ button {
+    background-image: url('./images/smile.svg');
+}
+
+span {
+    position: absolute;
+    bottom: -20px;
+    font-size: 20px;
+}
